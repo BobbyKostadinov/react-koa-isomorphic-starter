@@ -1,25 +1,35 @@
 {
-  "name": "react-isomorphic-starter",
+  "name": "react-koa-isomorphic-starter",
   "version": "1.0.0",
-  "description": "React Isomorphic Starter",
-  "private": true,
-  "author": "Yuriy Nemtsov <nemtsov@gmail.com> (http://yuriynemtsov.com/)",
+  "description": "React Isomorphic Starter using KOA",
+  "author": "Bobby Kostadinov b.a.kostadinov@gmail.com",
   "repository": {
     "type": "git",
-    "url": "git://github.com/nemtsov/react-isomorphic-starter.git"
+    "url": "git://github.com/BobbyKostadinov/react-koa-isomorphic-starter.git"
   },
+  "keywords": [
+    "koa",
+    "react",
+    "isomorphic",
+    "starter"
+  ],
   "scripts": {
-    "postinstall": "gulp"
+    "postinstall": "gulp",
+    "start": "node --harmony server.js | ./node_modules/.bin/bunyan -o short"
   },
   "dependencies": {
+    "bunyan": "^1.3.4",
     "common-errors": "^0.4.18",
     "compression": "^1.4.1",
-    "connect-cache-control": "^1.0.0",
-    "express": "^4.11.2",
+    "koa": "^0.18.1",
+    "koa-bunyan": "0.0.2",
+    "koa-bunyan-logger": "^1.2.0",
+    "koa-mount": "^1.3.0",
+    "koa-router": "^4.3.0",
+    "koa-static": "^1.4.9",
     "morgan": "^1.5.1",
     "node-jsx": "^0.12.4",
-    "react": "^0.12.2",
-    "serve-static": "^1.8.1"
+    "react": "^0.12.2"
   },
   "devDependencies": {
     "browserify": "^8.1.3",
